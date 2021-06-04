@@ -1,0 +1,229 @@
+.item-sub-menu {
+  margin: 0px;
+  padding: 10px;
+}
+.item-sub-menu a {
+  width: 100%;
+  margin: 0px 0 0 15px !important;
+  padding: 5px 0px 5px 15px !important;
+}
+.navigation .menu li {
+  padding: 5px !important;
+  margin: 10px 0 !important;
+}
+/*-------------------------------section-------------------------------------------*/
+.post-tag > a {
+  color: #777;
+}
+.post-share-list {
+  display: flex;
+}
+.post-share-list > a {
+  margin-left: 10px;
+  color: #777;
+}
+#custome-container-1 {
+  display: flex;
+  justify-content: space-between;
+}
+.previous,
+.next > h4 {
+  text-align: center;
+}
+.previous > a,
+.next > a {
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 500;
+  color: #777;
+}
+.post-share-list > a {
+  width: 25px;
+}
+#custome-qoute {
+  padding-left: 0;
+}
+.quote-text {
+  margin-right: -40px;
+}
+@media screen and (max-width: 414px) {
+  #custome-qoute {
+    padding-left: 0;
+  }
+  .quote-text {
+    margin-right: 20px;
+    width: 200px;
+  }
+  #custom-qute-1 {
+    display: flex;
+  }
+}
+#arrow-left-1 {
+  display: none;
+  float: left;
+}
+#arrow-right-1 {
+  display: block;
+}
+.next span {
+  float: right;
+}
+#arrow-left-2 {
+  display: block;
+}
+#arrow-right-2 {
+  display: none;
+  float: right;
+}
+
+@media screen and (max-width: 768px) {
+  .previous span {
+    float: left;
+  }
+  #arrow-left-1 {
+    display: block;
+    float: left;
+  }
+  #arrow-right-1 {
+    display: none;
+  }
+  .next span {
+    float: right;
+  }
+  #arrow-left-2 {
+    display: none;
+  }
+  #arrow-right-2 {
+    display: block;
+    float: right;
+  }
+}
+
+@media screen and (max-width: 987px) {
+  #custome-qoute {
+    padding-left: 0;
+  }
+  .quote-text {
+    margin-right: 10px;
+    width: 100%;
+  }
+  #custom-qute-1 {
+    display: flex;
+  }
+}
+.next > a {
+  margin-left: 20px;
+}
+.next span {
+  float: left;
+}
+.previous span {
+  float: right;
+}
+.previous,
+.next {
+  padding: 30px;
+}
+.previous > h3,
+.next > h3 {
+  font-size: 30px;
+}
+.card-body:hover {
+  background: #0038e3;
+  text-decoration: none;
+  transition: 0.3s;
+  color: white;
+}
+.post-meta > div {
+  display: inline-block;
+}
+.post-meta {
+  font-size: 14px;
+  font-weight: 500;
+}
+.post-categories > a {
+  font-size: 14px;
+  font-weight: 500;
+  color: #999999;
+  border-right: 1px solid #999999;
+  padding-right: 5px;
+}
+#custome-col-3 > h4,
+#custome-col-6 > h4 {
+  line-height: 2;
+  font-weight: 500;
+  color: #222222;
+  max-width: 100%;
+}
+#custome-col-4 > div > span {
+  display: block;
+  margin-bottom: 10px;
+  color: #0038e3;
+  font-size: 13px;
+  max-width: 100%;
+}
+.fa-quote-right {
+  font-size: 30px;
+  color: #0038e3;
+}
+#custome-col-5 > p,
+#custome-col-7,
+#custome-col-4 > p {
+  color: #999 !important;
+  font-size: 14px;
+  text-align: justify;
+}
+#custome-row-1 {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+}
+.post-tag > h4 {
+  display: inline-block;
+  font-size: 14px;
+  text-transform: uppercase;
+  margin-right: 3px;
+  margin-bottom: 0;
+}
+.post-tag > h5 > a {
+  color: #999999;
+  text-decoration-style: none;
+}
+.post-tag > h5 > a:hover {
+  color: #999999;
+  text-decoration-style: none;
+}
+.tagsingle > a {
+  display: inline-block;
+}
+
+/*---------------------------add tooltip---------------------------------------*/
+.info-counter {
+  width: 50px;
+  background: #0038e3;
+  color: white;
+  padding: 5px 0;
+  text-align: center;
+  border-radius: 3px;
+  display: block;
+  margin: -40px auto;
+  position: relative;
+  left: 15px;
+  bottom: 20px;
+  z-index: -1;
+  opacity: 0;
+  transition: 0.5s opacity;
+}
+.info-counter::before {
+  width: 10px;
+  content: "";
+  height: 10px;
+  position: absolute;
+  left: 25px;
+  bottom: -5px;
+  background: #0038e3;
+  transform: translateX(-30%) rotate(45deg);
+}
+.post-share-list a:hover .info-counter {
+  opacity: 1;
+}
